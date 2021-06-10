@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/library.css">
+    <meta charset="utf-8">
+    <title>e-Books Portal</title>
+
+</head>
+<body>
+    <h1 id="title"><img src="Resources/logo done.png" class="bannerPortal">
+				  
+        <span class="rightBox">
+         <div class="topnav">
+			<a href="/src/home.html">Home</a>
+			<a href="/src/categories.html">Categories</a>
+			<a class="active" href="/src/library.html">Library</a>
+			<a href="/src/about.html">About</a>
+			<a href="/src/contact.html">Contact</a>
+			<div class="dropdown">
+				<button class="dropbtn">Language 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="/src/library.html">English</a>
+				  <a href="/src/perpustakaan.html">Bahasa Malayu</a>				 
+				</div>
+			  </div> 
+	 	 </div>
+        </span>
+    </h1>
+
+    <h2>
+		<span class="leftBox">
+			<div class="slidecontent">
+				<img class="mySlides" src="Resources/National Library Scene-1.png" style="width:100%"> 
+				<img class="mySlides" src="Resources/National Library Scene-2.png" style="width:100%">
+				<img class="mySlides" src="Resources/National Library Scene-3.png" style="width:100%">
+				<img class="mySlides" src="Resources/National Library Scene-4.png" style="width:100%">
+				<img class="mySlides" src="Resources/National Library Scene-5.png" style="width:100%">
+			  </div>
+			  
+			  <script>
+			  var myIndex = 0;
+			  carousel();
+			  
+			  function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				  x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 2850);
+			  }
+			  </script>
+		</span>
+	</h2>
+
+	<h3>
+		<span class="display-right">
+			<marquee width="40%" direction="left" scrollamount="30">
+				<h4>Welcome to National Library of Malaysia. </h4>
+			</marquee>
+		</span>
+	</h3>
+
+<textarea class="textarea1 text-right animate-fading" style="border: none;" readonly>
+  The National Library total collection is 4.78 million units of which 4.52 million are printed materials, 98,406 non-printed materials, 4,974 Malay Manuscript and 158,316 digital materials.
+
+  The major role of a National Library is to preserve and expand the use of published collection from within a respective country as well as collection published in other countries that relates to it. As the National Library for Malaysia, this institution is the central repository for Malaysia's historical memory and culture as well as a library that stores, documentation and conserve intellectual achievement that has been translated into print and non-print form. The Malaysiana collection is a collection of national heritage and the Malaysian race.
+
+  The National Library collection consists the Malaysiana Collection, Non-Malaysiana Collection, Malay Manuscripts Collection, Rare Collection, Serials Collection, Electronic Media Collections, and Commercial databases.
+</textarea>
+	<button class="button" onclick="window.location='https://www.pnm.gov.my/';">
+		Visit Now
+	</button>
+
+    <div id="credit" style="background-color: #157fbb; text-align: center;">
+        <span style="color: #000000; font-size: 11pt;">This website is created for assignment Human Computer Interaction use.</br>© Copyright April 2021 Created by Digital Bookworms Team</span></p>
+        </div>
+</body>
+</html>

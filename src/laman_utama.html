@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/home.css">
+    <meta charset="utf-8">
+    <title>e-Books Portal</title>
+    
+</head>
+<body onload="display_ct()">
+    <h1 id="title"><img src="Resources/logo done.png" class="bannerPortal">
+			  
+        <span class="rightBox">
+         <div class="topnav">
+			<a class="active" href="/src/laman_utama.html">Laman Utama</a>
+			<a href="/src/kategori.html">Kategori</a>
+			<a href="/src/perpustakaan.html">Perpustakaan</a>
+			<a href="/src/mengenai_kami.html">Mengenai Kami</a>
+			<a href="/src/menghubungi_kami.html">Menghubungi Kami</a>
+			<div class="dropdown">
+				<button class="dropbtn">Bahasa
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="/src/home.html">English</a>
+				  <a href="/src/laman_utama.html">Bahasa Malayu</a>				 
+				</div>
+			  </div> 
+	 	 </div>
+        </span>
+    </h1>
+
+	<marquee width="100%" direction="left" scrollamount="15" style="background-color: black;color: white; font-size:18px;">
+		<strong>Selamat datang ke e-Books Portal.</strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		📢 Pengumuman Terkini: Pertambahan beberapa fungsi yang baharu di portal. &nbsp &nbsp &nbsp &nbsp &nbsp
+		📢 Pengumuman Terkini: Pengguna portal digalakkan memberi maklum balas untuk portal ini.&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<strong>Terima kasih kerana mengguna e-Books Portal.</strong>
+	</marquee>
+
+<script> 
+function display_c(){
+	var refresh=1000; // Refresh rate in milli seconds
+	mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+	var x = new Date()
+	document.getElementById('ct').innerHTML = x;
+	display_c();
+}
+</script>
+
+<span id='ct' style="margin-right: 5px;float: right;"></span>
+
+<div class="animate-zoom">
+	<img src="/src/Resources/category.png" class="icon" style="margin-top: 45px; margin-left: 30px;">
+	
+	<img src="/src/Resources/library.png" class="icon" style="position: absolute; margin-top: 45px; margin-left: 25px;">
+	<img src="/src/Resources/about us.png" class="icon" style="position: absolute; margin-top: 45px; margin-left: 400px;">
+	<img src="/src/Resources/contact us.png" class="icon" style="position: absolute; margin-top: 45px; margin-left: 770px;">
+
+	<button class="button" style=" margin-left: -230px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/kategori.html'">
+		Kategori
+	</button>
+
+	<button class="button" style=" margin-left: 125px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/perpustakaan.html'">
+		Perpustakaan
+	</button>
+
+	<button class="button" style=" margin-left: 490px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/mengenai_kami.html'">
+		Mengenai Kami
+	</button>
+
+	<button class="button" style=" margin-left: 835px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/menghubungi_kami.html'">
+		Menghubungi Kami
+	</button>
+</div>
+
+    <div id="credit" style="background-color: #157fbb; text-align: center;">
+        <span style="color: #000000; font-size: 11pt;">Laman web ini dihasilkan untuk kegunaan tugasan Interaksi Manusia dan Komputer.</br>© Hakcipta Terpelihara April 2021 - Diciptakan oleh Digital Bookworms Team</span></p>
+        </div>
+</body>
+</html>

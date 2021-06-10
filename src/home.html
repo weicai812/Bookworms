@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/home.css">
+    <meta charset="utf-8">
+    <title>e-Books Portal</title>
+	
+</head>
+<body onload=display_ct();>
+    <h1 id="title"><img src="Resources/logo done.png" class="bannerPortal">
+			  
+        <span class="rightBox">
+         <div class="topnav">
+			<a class="active" href="/src/home.html">Home</a>
+			<a href="/src/categories.html">Categories</a>
+			<a href="/src/library.html">Library</a>
+			<a href="/src/about.html">About</a>
+			<a href="/src/contact.html">Contact</a>
+			<div class="dropdown">
+				<button class="dropbtn">Language 
+				  <i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+				  <a href="/src/home.html">English</a>
+				  <a href="/src/laman_utama.html">Bahasa Malayu</a>				 
+				</div>
+			  </div> 
+	 	 </div>
+        </span>
+    </h1>
+		<marquee width="100%" direction="left" scrollamount="15" style="background-color: black;color: white; font-size:18px;">
+			<strong>Welcome to e-Books Portal.</strong>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			📢 Latest Announcement: New features are added in the portal. &nbsp &nbsp &nbsp &nbsp &nbsp
+			📢 Latest Announcement: The users are welcome to give us their feedback.&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			<strong>Thank you for using the e-Books Portal.</strong>
+		</marquee>
+
+<script> 
+	function display_c(){
+		var refresh=1000; // Refresh rate in milli seconds
+		mytime=setTimeout('display_ct()',refresh)
+	}
+
+	function display_ct() {
+		var x = new Date()
+		document.getElementById('ct').innerHTML = x;
+		display_c();
+	}
+</script>
+
+	<span id='ct' style="margin-right: 10px;float: right;"></span>
+
+	<div class="animate-zoom">
+		<img src="/src/Resources/category.png" class="icon" style="margin-top: 45px; margin-left: 30px;">
+		
+		<img src="/src/Resources/library.png" class="icon" style="position: absolute; margin-top: 45px; margin-left: 25px;">
+		<img src="/src/Resources/about us.png" class="icon" style="position: absolute; margin-top: 45px; margin-left: 400px;">
+		<img src="/src/Resources/contact us.png" class="icon" style="position: absolute; margin-top: 45px; margin-left: 770px;">
+
+		<button class="button" style=" margin-left: -250px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/categories.html'">
+			Categories
+		</button>
+
+		<button class="button" style=" margin-left: 150px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/library.html'">
+			Library
+		</button>
+
+		<button class="button" style=" margin-left: 525px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/about.html'">
+			About
+		</button>
+
+		<button class="button" style=" margin-left: 885px;position:absolute;margin-top: 450px;" onclick="document.location.href = '/src/contact.html'">
+			Contact
+		</button>
+	</div>
+
+	
+    <div id="credit" style="background-color: #157fbb; text-align: center;">
+        <span style="color: #000000; font-size: 11pt;">This website is created for assignment Human Computer Interaction use.</br>© Copyright April 2021 Created by Digital Bookworms Team</span></p>
+        </div>
+</body>
+</html>
